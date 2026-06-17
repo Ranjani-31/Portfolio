@@ -1,0 +1,87 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10%;
+
+  background:
+    radial-gradient(circle at top left,
+      rgba(144, 0, 255, 0.411),
+      transparent 40%),
+    radial-gradient(circle at bottom right,
+      rgba(115, 0, 255, 0.3),
+      transparent 40%),
+    #000000;
+
+  color: white;
+}
+
+.hero-content {
+  max-width: 500px;
+  text-align: start;
+}
+
+.hero-tag {
+  
+  font-size: 1rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #94a3b8;
+  margin-bottom: 1rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+.hero h1 span {
+  background: linear-gradient(
+    90deg,
+    #3c0097,
+    #6502ac,
+    #7f00a2
+  );
+ font-weight: 600;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-description {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #cbd5e1;
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.hero-buttons button {
+  padding: 14px 28px;
+  border: none;
+  border-radius: 50px;
+
+  background: #6366f1;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.hero-buttons button:hover {
+  transform: translateY(-3px);
+}
+
+.hero-buttons .secondary {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}

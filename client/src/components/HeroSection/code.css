@@ -1,0 +1,101 @@
+.code-svg{
+  background: transparent;
+}
+/* Dull base lines */
+.base-path {
+  fill: none;
+  stroke: rgba(168, 85, 247, 0.2);
+  stroke-width: 8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Moving neon segment */
+.glow-path {
+  fill: none;
+  stroke: #d2d1d4;
+  stroke-width: 8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+
+  filter:
+    drop-shadow(0 0 5px #922fef)
+    drop-shadow(0 0 15px #942ef4)
+    drop-shadow(0 0 30px #802ece)
+   
+}
+/* 
+Floting Effect */
+
+.code-svg {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Glow Path */
+
+.glow-path {
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.2;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Moving Neon Segment */
+
+.glow-path1 {
+  stroke-dasharray: 50 var(--length);
+  animation: flow 7s linear infinite;
+  
+}
+
+@keyframes flow {
+  from {
+    stroke-dashoffset: 300;
+  }
+
+  to {
+    stroke-dashoffset: -300;
+  }
+}
+
+.glow-path2 {
+  stroke-dasharray: 50 var(--length);
+  animation: flow2 7s linear infinite;
+}
+
+@keyframes flow2 {
+  from {
+    stroke-dashoffset: -300;
+  }
+
+  to {
+    stroke-dashoffset: 300;
+  }
+}
+
+
